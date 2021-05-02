@@ -155,6 +155,14 @@ python-versions = "*"
 six = "*"
 
 [[package]]
+name = "dataclasses"
+version = "0.6"
+description = "A backport of the dataclasses module for Python 3.6"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "decorator"
 version = "5.0.3"
 description = "Decorators for Humans"
@@ -476,6 +484,23 @@ numpy = ">=1.16"
 pillow = ">=6.2.0"
 pyparsing = ">=2.2.1"
 python-dateutil = ">=2.7"
+
+[[package]]
+name = "mediapipe"
+version = "0.8.3.1"
+description = "MediaPipe is the simplest way for researchers and developers to build world-class ML solutions and applications for mobile, edge, cloud and the web."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+absl-py = "*"
+attrs = ">=19.1.0"
+dataclasses = "*"
+numpy = "*"
+opencv-python = "*"
+protobuf = ">=3.11.4"
+six = "*"
 
 [[package]]
 name = "mistune"
@@ -1140,7 +1165,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "5ecc95b2cbce2cb9c6d1fd37c0789717e4923341a4fedd601122f46b895bec5c"
+content-hash = "8632a77115c9323a702ccec54e09a4086a71cc29ace22e368bde06cddb8d8704"
 
 [metadata.files]
 absl-py = [
@@ -1253,6 +1278,10 @@ colorama = [
 cycler = [
     {file = "cycler-0.10.0-py2.py3-none-any.whl", hash = "sha256:1d8a5ae1ff6c5cf9b93e8811e581232ad8920aeec647c37316ceac982b08cb2d"},
     {file = "cycler-0.10.0.tar.gz", hash = "sha256:cd7b2d1018258d7247a71425e9f26463dfb444d411c39569972f4ce586b0c9d8"},
+]
+dataclasses = [
+    {file = "dataclasses-0.6-py3-none-any.whl", hash = "sha256:454a69d788c7fda44efd71e259be79577822f5e3f53f029a22d08004e951dc9f"},
+    {file = "dataclasses-0.6.tar.gz", hash = "sha256:6988bd2b895eef432d562370bb707d540f32f7360ab13da45340101bc2307d84"},
 ]
 decorator = [
     {file = "decorator-5.0.3-py3-none-any.whl", hash = "sha256:e3f6d0eb6f1bf4580f872cb4313cb9a2067183e92bb1fbc4e5309285342d3420"},
@@ -1515,6 +1544,17 @@ matplotlib = [
     {file = "matplotlib-3.4.1-cp39-cp39-win32.whl", hash = "sha256:9f374961a3996c2d1b41ba3145462c3708a89759e604112073ed6c8bdf9f622f"},
     {file = "matplotlib-3.4.1-cp39-cp39-win_amd64.whl", hash = "sha256:53ceb12ef44f8982b45adc7a0889a7e2df1d758e8b360f460e435abe8a8cd658"},
     {file = "matplotlib-3.4.1.tar.gz", hash = "sha256:84d4c4f650f356678a5d658a43ca21a41fca13f9b8b00169c0b76e6a6a948908"},
+]
+mediapipe = [
+    {file = "mediapipe-0.8.3.1-cp37-cp37m-macosx_10_15_x86_64.whl", hash = "sha256:78d159caabd7f616dde49b2f067f55586965bc99a19ddaa91dd8325bf9acce1c"},
+    {file = "mediapipe-0.8.3.1-cp37-cp37m-manylinux2014_x86_64.whl", hash = "sha256:f43bfdc34110bfb5fd3a17f882f3b7aa994223560d85b86ecc63c15eb14221ab"},
+    {file = "mediapipe-0.8.3.1-cp37-cp37m-win_amd64.whl", hash = "sha256:ef6bc844bebc8c925928b01249fafe4e9e17ef798c18720dbd1ce955e5f07399"},
+    {file = "mediapipe-0.8.3.1-cp38-cp38-macosx_10_15_x86_64.whl", hash = "sha256:cae445465416f8a34c25eee1dd428253daf71bcc2fd485766865f6e3bb8b12b5"},
+    {file = "mediapipe-0.8.3.1-cp38-cp38-manylinux2014_x86_64.whl", hash = "sha256:7d0b4029f55435443fe9f501b6e8275a168c7c2a914365529c966b49bb0daa2d"},
+    {file = "mediapipe-0.8.3.1-cp38-cp38-win_amd64.whl", hash = "sha256:ed94e6f38c9af70f3b4dd99066ba1887205bd657dac870957780d8ce4f6e3d0f"},
+    {file = "mediapipe-0.8.3.1-cp39-cp39-macosx_10_15_x86_64.whl", hash = "sha256:38fe653e7156a5c75921a1d4068bf51359166a62c73154650ae2b0fe1fee35e6"},
+    {file = "mediapipe-0.8.3.1-cp39-cp39-manylinux2014_x86_64.whl", hash = "sha256:6c5fb3ef485afa1586aa372cb3c945f8b5bbc308ab6c7df0111e04b386ab3f42"},
+    {file = "mediapipe-0.8.3.1-cp39-cp39-win_amd64.whl", hash = "sha256:b20493a3fb0af70940649754a22c7b48397b8eb29bf4ca5d859a9c72ab8e6a7c"},
 ]
 mistune = [
     {file = "mistune-0.8.4-py2.py3-none-any.whl", hash = "sha256:88a1051873018da288eee8538d476dffe1262495144b33ecb586c4ab266bb8d4"},
