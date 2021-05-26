@@ -10,7 +10,7 @@ python = "^3.8"
 notebook = "^6.3.0"
 tensorflow = "^2.4.1"
 seaborn = "^0.11.1"
-opencv-python = "^4.5.1"
+opencv-contrib-python = "^4.5.2"
 mediapipe = "^0.8.3"
 
 [tool.poetry.dev-dependencies]
